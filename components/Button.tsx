@@ -6,9 +6,9 @@ type Props = {
 
 export default function Button({ label }: Props) {
     return (
-        <View>
-            <Pressable>
-                <Text />
+        <View style={styles.buttonContainer}>
+            <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+                <Text style={styles.buttonLabel}>{label}</Text>
             </Pressable>
         </View>
     );
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     buttonLabel: {
-        color: '#1f1f1f',
+        color: '#efefef',
         fontSize: 16,
     },
 });
