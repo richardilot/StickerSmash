@@ -1,9 +1,9 @@
 import { Image, type ImageSource } from 'expo-image';
 import { useState } from 'react';
-import { FlatList, Platform, Pressable, StyleSheet } from 'react-native';
+import { ImageSourcePropType, FlatList, Platform, Pressable, StyleSheet } from 'react-native';
 
 type Props = {
-  onSelect: (image: ImageSource) => void;
+  onSelect: (image: ImageSourcePropType) => void;
   onCloseModal: () => void;
 };
 
